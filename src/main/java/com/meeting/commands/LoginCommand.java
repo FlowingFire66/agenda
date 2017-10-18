@@ -75,10 +75,15 @@ public class LoginCommand implements CommandIn {
 
     public void excute() {
         User user2 = userMapper.findUserByUserName(username);
-        if(  user2.getPassword().equals(password) ){
+         if(user2==null)
+       {
+           System.out.println("该用户不存在！");
+       }
+       else if(  user2.getPassword().equals(password) ){
             Login.setUser(user2);
             System.out.println("成功登陆");
-        }else {
+        }
+        else {
             System.out.println("密码错误！");
         }
     }

@@ -89,6 +89,11 @@ public class RegisterCommand implements CommandIn {
             userMapper.addUser(user);
             System.out.println("注册成功");
         }
+         else{
+            System.out.println("该用户已注册");
+        }
+
+ 
 
     }
 
