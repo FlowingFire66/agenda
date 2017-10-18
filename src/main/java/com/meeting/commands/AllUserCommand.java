@@ -20,7 +20,7 @@ public class AllUserCommand implements CommandIn {
 
     @Override
     public boolean getOptions(String[] args) {
-        return false;
+        return true;
     }
 
 
@@ -46,7 +46,7 @@ public class AllUserCommand implements CommandIn {
 
     @Override
     public boolean checkParameters() {
-        return false;
+        return true;
 
     }
 }
