@@ -172,7 +172,7 @@ public class InviteCommand implements CommandIn {
 
         return flag;
     }
-
+    //检查参加是否合法
     @Override
     public boolean checkParameters() {
         for (String s:
