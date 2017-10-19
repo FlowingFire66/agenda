@@ -17,7 +17,7 @@ import java.util.List;
  * User: zhouyangjian
  * Date: 2017/10/19 0019
  * Time: 11:20
- * Description:邀请用户们参加会议
+ * Description:邀请用户们参加会议.
  */
 public class InviteCommand implements CommandIn {
     Agenda agenda = new Agenda();
@@ -172,7 +172,7 @@ public class InviteCommand implements CommandIn {
 
         return flag;
     }
-
+    //检查参加是否合法
     @Override
     public boolean checkParameters() {
         for (String s:
